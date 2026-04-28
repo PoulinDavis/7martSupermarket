@@ -5,7 +5,7 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
      <class name="testscript.LogInTest">
-      <methods><include name="verifyTheUserisAbleToSignInUsingValidCredentials"></include></methods>
+      <!--<methods><include name="verifyTheUserisAbleToSignInUsingValidCredentials"></include></methods>-->
       </class>
       <class name="testscript.ManageNewsTest"/>
       <class name="testscript.AdminUserTest"/>
