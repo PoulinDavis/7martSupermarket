@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.HomePage;
 import pages.LogInPage;
 import utilities.ExcelUtility;
@@ -26,7 +27,7 @@ public class HomeTest extends Base {
 		homepage.clickOnAdmin().clickOnLogout();
 		//homepage.clickOnLogout();
 		boolean signin=homepage.isSignInButtonDisapled();
-		Assert.assertTrue(signin);
+		Assert.assertTrue(signin,Constant.LOGOUTFAILURE);
 	}
 	
 

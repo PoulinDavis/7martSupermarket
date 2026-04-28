@@ -1,0 +1,9 @@
+testscript\HomeTest.class
+testscript\ManageCategoryTest.class
+testscript\LogInTest.class
+testscript\Base.class
+testscript\ManageNewsTest.class
+testscript\ManageContactTest.class
+testscript\ManageFooterTextTest.class
+retry\Retry.class
+testscript\AdminUserTest.class

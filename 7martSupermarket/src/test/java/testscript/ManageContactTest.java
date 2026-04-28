@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.ManageContactPage;
@@ -48,7 +49,7 @@ public class ManageContactTest extends Base {
 		//managecontactpage.enterDeliveryChargeLimit(deliverychargelimit);
 		//managecontactpage.clickOnUpdate();
 		boolean alertmsg=managecontactpage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmsg);
+		Assert.assertTrue(alertmsg,Constant.VALIDCONTACT);
 		
 	}
 

@@ -39,7 +39,7 @@ public class ManageCategoryTest extends Base {
 		//managecategorypage.onleftMenuYesClick();
 		//managecategorypage.clickOnSave();
 		boolean alertmsg=managecategorypage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmsg);
+		Assert.assertTrue(alertmsg,Constant.VALIDMANAGECATEGORY);
 		
 	}
 

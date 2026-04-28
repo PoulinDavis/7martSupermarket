@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LogInPage;
 import pages.HomePage;
 import pages.ManageNewsPage;
@@ -31,7 +32,7 @@ public class ManageNewsTest extends Base {
 		//managenewspage.enterNews(news);
 		//managenewspage.clickOnSave();
 		boolean alertmesg=loginpage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmesg);
+		Assert.assertTrue(alertmesg,Constant.VALIDNEWS);
 		
 		
 	}

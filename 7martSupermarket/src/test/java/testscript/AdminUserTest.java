@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminUserPage;
 import pages.HomePage;
 import pages.LogInPage;
@@ -36,7 +37,7 @@ public class AdminUserTest extends Base {
 	//adminuserpage.userTypeDropDown().clickOnSave();
 	//adminuserpage.clickOnSave();
 	boolean alertmesg=adminuserpage.isGreenAlertMsgDispalyed();
-	Assert.assertTrue(alertmesg);
+	Assert.assertTrue(alertmesg,Constant.VALIDADMINUSER);
 	
 	
 	}

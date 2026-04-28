@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminUserPage;
 import pages.HomePage;
 import pages.LogInPage;
@@ -41,7 +42,7 @@ public class ManageFooterTextTest extends Base {
 			//managefooterpage.enterPhoner(phonNumber);
 			//managefooterpage.clickOnUpdate();
 			boolean alertmesg=managefooterpage.isAlertMsgDispalyed();
-			Assert.assertTrue(alertmesg);
+			Assert.assertTrue(alertmesg,Constant.VALIDFOOTERTEXT);
 	}
 
 }

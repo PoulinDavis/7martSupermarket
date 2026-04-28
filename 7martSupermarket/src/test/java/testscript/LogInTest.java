@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.HomePage;
 import pages.LogInPage;
 import utilities.ExcelUtility;
@@ -23,7 +24,7 @@ public class LogInTest extends Base {
 		//loginpage.enterPassword(passwordValue);
 		homepage=loginpage.clickOnSignIn();
 		boolean homePage=loginpage.isHomePageDispalyed();
-		Assert.assertTrue(homePage);
+		Assert.assertTrue(homePage,Constant.VALIDCREDENTIALS);
 	}
 	
 	@Test(description="verifyTheUserisAbleTosignInUsingInValidCredentials")
@@ -38,7 +39,7 @@ public class LogInTest extends Base {
 		//loginpage.enterPassword(passwordValue);
 		homepage=loginpage.clickOnSignIn();
 		boolean alertmsg=loginpage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmsg);
+		Assert.assertTrue(alertmsg,Constant.INVALIDCREDENTIALS);
 	}
 	
 	@Test(description="verifyTheUserisAbleToSignInUsingValidUsernameAndInvalidPassword")
@@ -53,7 +54,7 @@ public class LogInTest extends Base {
 		//loginpage.enterPassword(passwordValue);
 		homepage=loginpage.clickOnSignIn();
 		boolean alertmsg=loginpage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmsg);
+		Assert.assertTrue(alertmsg,Constant.INVALIDCREDENTIALS);
 	}
 	
 	@Test(description="verifyTheUserisAbleToSignInUsingInValidUsernameAndValidPassword")
@@ -68,7 +69,7 @@ public class LogInTest extends Base {
 		//loginpage.enterPassword(passwordValue);
 		homepage=loginpage.clickOnSignIn();
 		boolean alertmsg=loginpage.isAlertMsgDispalyed();
-		Assert.assertTrue(alertmsg);
+		Assert.assertTrue(alertmsg,Constant.INVALIDCREDENTIALS);
 	}
 
 }
