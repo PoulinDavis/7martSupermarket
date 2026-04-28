@@ -28,6 +28,12 @@ public class FakerUtility {
 	public String generatePassword() {
 		return faker.internet().password();
 	}
+	public String generatePhoneNumber()
+	{
+		return faker.phoneNumber().cellPhone();
+		
+	}
+	
 
 
 }

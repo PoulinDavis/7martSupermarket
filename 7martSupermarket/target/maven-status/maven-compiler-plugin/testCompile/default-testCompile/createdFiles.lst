@@ -3,6 +3,7 @@ testscript\ManageCategoryTest.class
 testscript\LogInTest.class
 testscript\Base.class
 testscript\ManageNewsTest.class
+generatereport\Listeners.class
 testscript\ManageContactTest.class
 testscript\ManageFooterTextTest.class
 retry\Retry.class
