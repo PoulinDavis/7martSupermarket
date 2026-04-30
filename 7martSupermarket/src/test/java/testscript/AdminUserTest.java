@@ -16,7 +16,7 @@ import utilities.FakerUtility;
 public class AdminUserTest extends Base {
 	HomePage homepage;
 	AdminUserPage adminuserpage;
-	@Test(retryAnalyzer=retry.Retry.class,groups= {"regression"})
+	@Test(retryAnalyzer=retry.Retry.class,groups= {"regression"},description="Checking whether admin able to manage users")
 	public void enterAdminUser() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(1, 0, "loginpage");
 	String passwordValue=ExcelUtility.getStringData(1, 1, "loginpage");
