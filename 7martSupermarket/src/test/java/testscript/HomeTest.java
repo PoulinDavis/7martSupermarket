@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class HomeTest extends Base {
 	HomePage homepage;
-	@Test
+	@Test(description="checking LogOut")
 	public void logoutSesson() throws IOException
 	{
 		
