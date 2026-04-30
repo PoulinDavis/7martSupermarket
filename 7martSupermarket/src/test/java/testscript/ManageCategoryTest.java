@@ -16,7 +16,7 @@ import utilities.ExcelUtility;
 public class ManageCategoryTest extends Base {
 	HomePage homepage;
 	ManageCategoryPage managecategorypage;
-	@Test(description="Checking whether admin able to manage category")
+	@Test(description="Checking whether admin able to manage category",groups= {"regression"})
 	public void isAdminAbleToManageCategorymethod() throws IOException, AWTException
 	{
 		String usernameValue=ExcelUtility.getStringData(1, 0, "loginpage");
